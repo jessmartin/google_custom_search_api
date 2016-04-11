@@ -173,6 +173,6 @@ module GoogleCustomSearchApi
   # Query Google, and make sure it responds.
   #
   def fetch(url)
-    return HTTParty.get(url)
+    return HTTParty.get(url, :verify => false)
   end
 end
